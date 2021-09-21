@@ -10,8 +10,8 @@
     <h1>Test page</h1>
     <button id="copy"></button>
     <script>
-      document.getElementById("copy").onclick = async () => {
-        await navigator.clipboard.writeText(
+      document.getElementById("copy").onclick =  () => {
+        navigator.clipboard.writeText(
           "This text is now in the clipboard"
         );
         console.log("copied");
