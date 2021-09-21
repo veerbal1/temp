@@ -13,7 +13,9 @@
       document.getElementById("copy").onclick =  () => {
         navigator.clipboard.writeText(
           "This text is now in the clipboard"
-        );
+        ).then(()=>{
+            alert("Copied")
+        });
         console.log("copied");
       };
     </script>
